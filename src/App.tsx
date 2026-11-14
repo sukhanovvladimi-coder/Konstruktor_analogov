@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 import type { LucideIcon } from 'lucide-react';
 import { GitHubUploadGuide } from './components/GitHubUploadGuide';
+import { UploadDisabledFix } from './components/UploadDisabledFix';
 import {
   Package,
   GitBranch,
@@ -341,6 +342,9 @@ export default function App() {
             ))}
           </div>
         </Section>
+
+        {/* Upload Disabled Fix */}
+        <UploadDisabledFix />
 
         {/* Publish Methods */}
         <Section id="publish" title="Как опубликовать (3 способа)" icon={GitBranch}>

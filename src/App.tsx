@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import type { LucideIcon } from 'lucide-react';
+import { GitHubUploadGuide } from './components/GitHubUploadGuide';
 import {
   Package,
   GitBranch,
@@ -437,6 +438,9 @@ git push -u origin main`}
             </div>
           </div>
         </Section>
+
+        {/* GitHub Upload Guide */}
+        <GitHubUploadGuide />
 
         {/* Excluded Files */}
         <Section id="exclude" title="Что НЕ должно попасть в репозиторий" icon={Shield}>
